@@ -24,7 +24,7 @@
         <nav class="navbar navbar-expand-md navbar-white bg-navbar fixed-left justify-content-between" id="sidebar">
           <div class="nav-container">
             <a class="navbar-brand" href="index.html">
-              <img src="logo/Spotify_Logo.png" alt="Spotify_Logo" width="131" height="40" />
+              <img  src="logo/Spotify_Logo.png" alt="Spotify_Logo" width="131" height="40" />
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup"
               aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
@@ -47,7 +47,7 @@
                         aria-label="Search" aria-describedby="basic-addon2" />
                       <div class="input-group-append" style="margin-bottom: 4%">
                         <button class="btn btn-outline-secondary btn-sm" type="button" id="button-search"
-                          onclick="search()">
+                          onclick="search(searchArtist)">
                           GO
                         </button>
                       </div>
@@ -89,7 +89,7 @@
         </div>
         <div class="row">
           <div class="col-10">
-            <div id="eminem">
+            <div id="eminem" class="d-none">
               <h2>Eminem</h2>
               <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3" id="eminemSection">
               </div>
@@ -98,16 +98,17 @@
         </div>
         <div class="row">
           <div class="col-10">
-            <div id="metallica">
+            <div id="metallica" class="d-none">
               <h2>Metallica</h2>
               <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3" id="metallicaSection">
+               
               </div>
             </div>
           </div>
         </div>
         <div class="row">
           <div class="col-10">
-            <div id="queen">
+            <div id="queen" class="d-none">
               <h2>Queen</h2>
               <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3" id="queenSection">
               </div>
@@ -116,7 +117,7 @@
         </div>
         <div class="row">
           <div class="col-10">
-            <div id="found">
+            <div id="found" class="d-none">
               <h2>Search results</h2>
               <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-3 row-cols-xl-4 imgLinks py-3" id="searchSection">
               </div>
@@ -128,7 +129,7 @@
   </div>
   <!--END MAIN-->
 
-  <!--NAVBAR FLEX-BOTTOM-->
+  <!--NAVBAR FLEX-BOTTOM
   <div class="container-fluid fixed-bottom bg-container pt-1">
     <div class="row">
       <div class="col-lg-10 offset-lg-2">
@@ -164,9 +165,9 @@
       </div>
     </div>
   </div>
-  <!--END NAVBAR BOTTOM-->
+  END NAVBAR BOTTOM-->
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+ <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
   </script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
@@ -175,6 +176,8 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
     integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
   </script>
+   <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
   <script src="index.js"></script>
 
   <script>
