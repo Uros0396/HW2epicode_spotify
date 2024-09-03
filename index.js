@@ -5,7 +5,7 @@ fetch('https://striveschool-api.herokuapp.com/api/deezer/search?q=eminem')
         return `
             <div class="card m-2 bg-dark" style="width: 18rem">
                 <img src="${elem.album.cover_medium}" class="card-img-top w-100" alt="...">
-                <div class="card-body mt-4">
+                <div class="card-body mt-5">
                     <h5 class="card-title text-primary">${elem.title}</h5>
                     <div class="d-flex justify-content-between text-secondary">
                         <h6 class="card-text">${elem.artist.name}</h6>
@@ -62,7 +62,7 @@ fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=metallica")
            return  ` <div class="card m-2 bg-dark" style="width: 18rem;">
                   <img src="${elem.album.cover_medium}" class="card-img-top w-100" alt="...">
                   
-                  <div class="card-body mt-4">
+                  <div class="card-body mt-5">
                     <h5 class="text-primary">${elem.title}</h5>
                     <div class="d-flex text-secondary justify-content-between align-items-center">
                         <h6>${elem.artist.name}</h6>
@@ -98,7 +98,7 @@ fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=metallica")
            return  ` <div class="card m-2 bg-dark" style="width: 18rem;">
                   <img src="${elem.album.cover_medium}" class="card-img-top w-100" alt="...">
                   
-                  <div class="card-body mt-4">
+                  <div class="card-body mt-5">
                     <h5 class="text-primary">${elem.title}</h5>
                     <div class="d-flex justify-content-between align-items-center text-secondary">
                         <h6>${elem.artist.name}</h6>
